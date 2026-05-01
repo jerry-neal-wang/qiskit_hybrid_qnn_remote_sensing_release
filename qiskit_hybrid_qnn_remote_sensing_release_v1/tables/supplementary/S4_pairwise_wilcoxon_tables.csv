@@ -1,0 +1,16 @@
+setting,shot,left_method,left_display_name,right_method,right_display_name,num_pairs,mean_delta_macro_f1,std_delta_macro_f1,better_count,tie_count,worse_count,wilcoxon_p_value
+transport_logistics4_small_cnn_shot16,16,hybrid_control,Classical Control,hybrid_no_entanglement,QNN No-Ent,7,0.19762390568581806,0.18306060523814396,6,0,1,0.03125
+transport_logistics4_small_cnn_shot16,16,hybrid_control,Classical Control,hybrid_zz_real_amplitudes,QNN ZZ+RealAmp,7,0.14905830448930066,0.15241973353461796,7,0,0,0.015625
+transport_logistics4_small_cnn_shot16,16,hybrid_no_entanglement,QNN No-Ent,hybrid_zz_real_amplitudes,QNN ZZ+RealAmp,7,-0.04856560119651742,0.18749555039610472,3,0,4,0.578125
+transport_logistics4_small_cnn_shot32,32,hybrid_control,Classical Control,hybrid_no_entanglement,QNN No-Ent,7,0.009357118518432858,0.028657355528327186,3,0,4,0.8125
+transport_logistics4_small_cnn_shot32,32,hybrid_control,Classical Control,hybrid_zz_real_amplitudes,QNN ZZ+RealAmp,7,0.0018376711487548508,0.03831739139996781,4,0,3,0.8125
+transport_logistics4_small_cnn_shot32,32,hybrid_no_entanglement,QNN No-Ent,hybrid_zz_real_amplitudes,QNN ZZ+RealAmp,7,-0.007519447369678007,0.04092145964378685,3,0,4,1.0
+transport_logistics4_small_cnn_shot64,64,hybrid_control,Classical Control,hybrid_no_entanglement,QNN No-Ent,7,-0.0020944983668579648,0.015721399024126444,4,0,3,0.8125
+transport_logistics4_small_cnn_shot64,64,hybrid_control,Classical Control,hybrid_zz_real_amplitudes,QNN ZZ+RealAmp,7,0.0001476708508308468,0.00740239581823804,3,0,4,0.9375
+transport_logistics4_small_cnn_shot64,64,hybrid_no_entanglement,QNN No-Ent,hybrid_zz_real_amplitudes,QNN ZZ+RealAmp,7,0.0022421692176888114,0.010642442731554515,3,0,4,0.8125
+transport_logistics4_resnet18_shot16,16,hybrid_control,Classical Control,hybrid_no_entanglement,QNN No-Ent,7,-0.001098476567777237,0.006203582858807183,2,0,5,0.6875
+transport_logistics4_resnet18_shot16,16,hybrid_control,Classical Control,hybrid_zz_real_amplitudes,QNN ZZ+RealAmp,7,0.0050990488802819455,0.0109734661444168,3,0,4,0.578125
+transport_logistics4_resnet18_shot16,16,hybrid_no_entanglement,QNN No-Ent,hybrid_zz_real_amplitudes,QNN ZZ+RealAmp,7,0.006197525448059182,0.010781172008950355,6,0,1,0.046875
+urban_structural4_small_cnn_shot16,16,hybrid_control,Classical Control,hybrid_no_entanglement,QNN No-Ent,7,-0.006282510400828314,0.22369799203505056,2,0,5,0.6875
+urban_structural4_small_cnn_shot16,16,hybrid_control,Classical Control,hybrid_zz_real_amplitudes,QNN ZZ+RealAmp,7,-0.05825264184765961,0.0858725166969618,2,0,5,0.15625
+urban_structural4_small_cnn_shot16,16,hybrid_no_entanglement,QNN No-Ent,hybrid_zz_real_amplitudes,QNN ZZ+RealAmp,7,-0.05197013144683129,0.15933980355520758,2,0,5,0.46875

@@ -1,0 +1,4 @@
+split,source_image_count,airplane_count,ship_count,vehicle_count,harbor_count
+train,6698,5181,40450,27374,3850
+val,1436,2484,10989,6459,810
+test,1435,2435,11094,6530,809

@@ -1,0 +1,8 @@
+subset_candidate,classes,screening_stage,seeds,shot,control_macro_f1,no_ent_macro_f1,zz_macro_f1,decision,role_in_paper
+transport_logistics4_small_cnn_bblr01,airplane;ship;vehicle;harbor,final 7-seed main confirmation,42-48,16,0.3055,0.5031,0.4545,keep as main positive low-shot window,main result
+transport_logistics4_small_cnn_bblr01,airplane;ship;vehicle;harbor,label-count boundary,42-48,32,0.6034,0.6128,0.6053,retain as negative/contracted boundary,larger-shot stress test
+transport_logistics4_small_cnn_bblr01,airplane;ship;vehicle;harbor,label-count boundary,42-48,64,0.6705,0.6685,0.6707,retain as null boundary,larger-shot stress test
+transport_logistics4_resnet18_bblr01,airplane;ship;vehicle;harbor,strong-backbone boundary,42-48,16,0.8545,0.8534,0.8596,retain as quantum-control margin compression boundary,ResNet18 transfer stress test
+urban_structural4_small_cnn_bblr01,vehicle;bridge;harbor;storagetank,cross-subset boundary,42-48,16,0.4655,0.4593,0.4073,retain as non-reproduced cross-subset boundary,negative subset-composition stress test
+transport_logistics4_small_cnn_freezeonly,airplane;ship;vehicle;harbor,legacy 3-seed optimization screen,42-44,16,0.2945,,0.2207,exclude from main public reproduction bundle unless explicitly documenting exploratory optimization failures,internal exploratory screen only
+transport_logistics4_resnet18_legacy_screen,airplane;ship;vehicle;harbor,legacy 3-seed ResNet18 screen,42-44,16,0.8412,,0.8426,superseded by 7-seed ResNet18 boundary,internal exploratory screen only
