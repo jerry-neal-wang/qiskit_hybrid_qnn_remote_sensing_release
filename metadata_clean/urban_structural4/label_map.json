@@ -1,0 +1,6 @@
+{
+  "vehicle": 0,
+  "bridge": 1,
+  "harbor": 2,
+  "storagetank": 3
+}

@@ -1,0 +1,4 @@
+shot,left_method,left_display_name,right_method,right_display_name,num_pairs,mean_delta_macro_f1,std_delta_macro_f1,better_count,tie_count,worse_count,wilcoxon_p_value
+64,hybrid_control,Classical Control,hybrid_no_entanglement,QNN No-Ent,7,-0.0020944983668579648,0.015721399024126444,4,0,3,0.8125
+64,hybrid_control,Classical Control,hybrid_zz_real_amplitudes,QNN ZZ+RealAmp,7,0.0001476708508308468,0.00740239581823804,3,0,4,0.9375
+64,hybrid_no_entanglement,QNN No-Ent,hybrid_zz_real_amplitudes,QNN ZZ+RealAmp,7,0.0022421692176888114,0.010642442731554515,3,0,4,0.8125

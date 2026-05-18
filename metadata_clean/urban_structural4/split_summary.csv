@@ -1,0 +1,4 @@
+split,source_image_count,vehicle_count,bridge_count,harbor_count,storagetank_count
+train,7264,27874,2293,3065,17003
+val,1557,6234,839,1200,4687
+test,1556,6255,824,1204,4713

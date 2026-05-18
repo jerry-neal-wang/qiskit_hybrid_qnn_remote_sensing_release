@@ -1,0 +1,20 @@
+% Supplementary Table S1. Full per-condition statistics.
+\begin{table*}[!t]
+\centering
+\scriptsize
+\caption{Supplementary Table S1. Full per-condition statistics for matched QNN-control comparisons.}
+\label{tab:supp_full_stats}
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{tabular}{@{}p{0.16\textwidth}p{0.11\textwidth}p{0.255\textwidth}p{0.255\textwidth}p{0.11\textwidth}@{}}
+\toprule
+Regime & Control macro-F1 & No-ent statistics & ZZ+RA statistics & Verdict \\
+\midrule
+TL4 / small CNN / 16-shot & $0.3055\pm0.1729$ & $0.5031\pm0.1421$; $\Delta=+0.1976$; $p=0.03125$; CI $[+0.0766,+0.3271]$; signs 6/0/1; $\rho=2.30\times$ & $0.4545\pm0.1735$; $\Delta=+0.1491$; $p=0.01562$; CI $[+0.0621,+0.2665]$; signs 7/0/0; $\rho=5.51\times$ & Inside QCAD \\
+TL4 / small CNN / 32-shot & $0.6034\pm0.0478$ & $0.6128\pm0.0557$; $\Delta=+0.0094$; $p=0.81250$; CI $[-0.0081,+0.0302]$; signs 3/0/4; $\rho=2.24\times$ & $0.6053\pm0.0239$; $\Delta=+0.0018$; $p=0.81250$; CI $[-0.0265,+0.0257]$; signs 4/0/3; $\rho=6.30\times$ & Gain contracts \\
+TL4 / small CNN / 64-shot & $0.6705\pm0.0378$ & $0.6685\pm0.0280$; $\Delta=-0.0021$; $p=0.81250$; CI $[-0.0144,+0.0068]$; signs 4/0/3; $\rho=2.44\times$ & $0.6707\pm0.0314$; $\Delta=+0.0001$; $p=0.93750$; CI $[-0.0045,+0.0058]$; signs 3/0/4; $\rho=7.47\times$ & Gain vanishes \\
+TL4 / ResNet18 / 16-shot & $0.8545\pm0.0059$ & $0.8534\pm0.0027$; $\Delta=-0.0011$; $p=0.68750$; CI $[-0.0049,+0.0034]$; signs 2/0/5; $\rho=1.58\times$ & $0.8596\pm0.0125$; $\Delta=+0.0051$; $p=0.57812$; CI $[-0.0013,+0.0133]$; signs 3/0/4; $\rho=3.90\times$ & Compressed \\
+Urban4 / small CNN / 16-shot & $0.4655\pm0.1655$ & $0.4593\pm0.1951$; $\Delta=-0.0063$; $p=0.68750$; CI $[-0.1599,+0.1398]$; signs 2/0/5; $\rho=2.17\times$ & $0.4073\pm0.1658$; $\Delta=-0.0583$; $p=0.15625$; CI $[-0.1264,-0.0087]$; signs 2/0/5; $\rho=5.32\times$ & No stable transfer \\
+\bottomrule
+\end{tabular}
+\end{table*}

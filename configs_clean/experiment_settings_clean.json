@@ -1,0 +1,128 @@
+{
+  "release_tag": "release_v2",
+  "paper_package_source": "GRSL_v3_submission_ready_20260518",
+  "recommended_github_url": "https://github.com/jerry-neal-wang/qiskit_hybrid_qnn_remote_sensing_release",
+  "dataset_policy": {
+    "raw_dior_images_redistributed": false,
+    "raw_dior_annotations_redistributed": false,
+    "cropped_roi_images_redistributed": false,
+    "metadata_only": true
+  },
+  "dataset_roots_expected_after_preprocessing": {
+    "transport_logistics4": "data/processed/subset_candidates/transport_logistics4",
+    "urban_structural4": "data/processed/subset_candidates/urban_structural4"
+  },
+  "target_subsets": {
+    "transport_logistics4": [
+      "airplane",
+      "ship",
+      "vehicle",
+      "harbor"
+    ],
+    "urban_structural4": [
+      "vehicle",
+      "bridge",
+      "harbor",
+      "storagetank"
+    ]
+  },
+  "common_training": {
+    "seeds_main": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48
+    ],
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "scheduler": "cosine",
+    "warmup_epochs": 1,
+    "gradient_clip_norm": 1.0,
+    "early_stopping_patience": 4,
+    "train_augment": "train_light",
+    "validation_cap_per_class_during_training": 256,
+    "full_eval_at_end": true
+  },
+  "hybrid_common": {
+    "batch_size": 16,
+    "freeze_backbone_epochs": 2,
+    "backbone_lr_scale": 0.1,
+    "num_qubits": 4,
+    "qnn_output_dim": 4,
+    "feature_map_reps": 1,
+    "ansatz_reps": 1,
+    "fusion_mode": "concat",
+    "observable_mode": "auto",
+    "circuits": [
+      "no_entanglement",
+      "zz_real_amplitudes"
+    ]
+  },
+  "reported_settings": [
+    {
+      "id": "transport_logistics4_shot16_bblr01_7seed",
+      "subset": "transport_logistics4",
+      "shot": 16,
+      "backbone": "small_cnn",
+      "image_size": 64,
+      "backbone_feature_dim": 64,
+      "seeds": 7,
+      "role": "main evidence"
+    },
+    {
+      "id": "transport_logistics4_shot32_bblr01_7seed",
+      "subset": "transport_logistics4",
+      "shot": 32,
+      "backbone": "small_cnn",
+      "image_size": 64,
+      "backbone_feature_dim": 64,
+      "seeds": 7,
+      "role": "shot boundary"
+    },
+    {
+      "id": "transport_logistics4_shot64_bblr01_7seed",
+      "subset": "transport_logistics4",
+      "shot": 64,
+      "backbone": "small_cnn",
+      "image_size": 64,
+      "backbone_feature_dim": 64,
+      "seeds": 7,
+      "role": "shot boundary"
+    },
+    {
+      "id": "transport_logistics4_resnet18_shot16_bblr01_7seed",
+      "subset": "transport_logistics4",
+      "shot": 16,
+      "backbone": "resnet18",
+      "image_size": 96,
+      "backbone_feature_dim": 128,
+      "pretrained_backbone": true,
+      "input_normalization": "imagenet",
+      "seeds": 7,
+      "role": "strong-backbone boundary"
+    },
+    {
+      "id": "urban_structural4_shot16_bblr01_7seed",
+      "subset": "urban_structural4",
+      "shot": 16,
+      "backbone": "small_cnn",
+      "image_size": 64,
+      "backbone_feature_dim": 64,
+      "seeds": 7,
+      "role": "cross-subset boundary"
+    }
+  ],
+  "excluded_from_release": [
+    "raw DIOR images",
+    "original DIOR annotations",
+    "cropped ROI images",
+    "model checkpoints",
+    "raw shot_* run directories",
+    "IDE files",
+    "chat archives",
+    "internal work logs"
+  ]
+}

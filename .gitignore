@@ -1,0 +1,33 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Local datasets and derived image payloads are intentionally excluded.
+dataset_DIOR/
+JPEGImages*/
+Annotations/
+*.jpg
+*.jpeg
+
+# Model weights and large training artifacts are not part of the public release.
+*.pt
+*.pth
+*.ckpt
+shot_*/
+runs/
+wandb/
+
+# LaTeX/cache/build byproducts.
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.xdv
+
+# Local editor and OS metadata.
+.idea/
+.vscode/

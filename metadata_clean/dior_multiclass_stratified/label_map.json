@@ -1,0 +1,8 @@
+{
+  "airplane": 0,
+  "ship": 1,
+  "vehicle": 2,
+  "bridge": 3,
+  "harbor": 4,
+  "storagetank": 5
+}
