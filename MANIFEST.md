@@ -16,7 +16,6 @@
 - `experiment_evidence/`: clean `lowshot_summary_rows.csv`, `lowshot_detail_rows.csv`, and paper-ready CSV tables for reported and boundary regimes.
 - `metadata_clean/`: label maps, metadata CSVs, and split summaries for the processed DIOR-derived subsets.
 - `configs_clean/experiment_settings_clean.json`: sanitized settings for the release.
-- `CHECKSUMS.sha256`: SHA-256 checksums for all payload files except the checksum file itself.
 
 ## Excluded
 
